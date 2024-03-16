@@ -27,5 +27,10 @@ def is_odd_string(word):
         >>> is_odd_string('amazing')
         True
     """
+    #if len(word) % 2 == 1:
+    #    return True
+
+    # Work smarter, not harder. If it's an odd number of letters, it'll be odd.
+    return True if len(word) % 2 == 1 else False
 
     # Hint: you may find the ord() function useful here

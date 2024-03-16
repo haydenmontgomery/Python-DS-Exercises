@@ -19,3 +19,17 @@ def reverse_vowels(s):
     reverse_vowels("why try, shy fly?")
     'why try, shy fly?''
     """
+
+    vowels = []
+    result = ""
+    for char in (reversed(s)):
+        if char.lower() in 'aeiou':
+            vowels.append(char)
+            
+    for char in s:
+        if char.lower() in 'aeiou':
+            result += vowels[0]
+            vowels.pop(0)
+        else:
+         result += char
+    return result
